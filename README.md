@@ -1,1 +1,1 @@
-Just a starting web site to try html coding
+Just a basic web site to practice html coding
