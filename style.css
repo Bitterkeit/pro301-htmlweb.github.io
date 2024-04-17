@@ -90,3 +90,21 @@ a:hover {
     text-decoration: none;
     font-weight: bold;
 }
+
+/*Reloj*/
+.reloj{
+    text-align: right;
+    font-family: 'Roboto Slab', sans-serif;
+    color: royalblue;
+    background-color: black;
+}
+
+.fecha{
+    letter-spacing: 0.1em;
+    font-size: 24px;
+}
+
+.tiempo{
+    letter-spacing: 0.1em;
+    font-size: 24px;
+}
