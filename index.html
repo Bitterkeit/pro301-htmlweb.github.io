@@ -1,184 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Faro</title>
-    <!-- con la siguiente línea importamos un archivo de CSS a nuestro HTML -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css"/>
-    <!-- importamos una fuente desde google fonts a nuestro HTML el cual será utilizado por CSS más adelante -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="reloj">
-        <p class="fecha"></p>
-        <p class="tiempo"></p>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#Inicio">
+                <img src="img/logo.png" width="100" alt="El Faro"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#NoticiasRecientes">Noticias Recientes</a>
+                    <a class="nav-item nav-link" href="#Noticias">Noticias</a>
+                    <a class="nav-item nav-link" href="#Deportes">Deportes</a>
+                    <a class="nav-item nav-link" href="#Negocios">Negocios</a>
+                </div>
+                <div id="clock" class="clock"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="announcement-wrapper">
+        <div class="announcements">
+            <div class="announcement">
+                <a href="" target="_blank">¡Bienvenido a nuestro sitio web! Conoce nuestras últimas actualizaciones.</a>
+            </div>
+            <div class="announcement">
+                <a href="https://www.pollachilena.cl/pozo-loto-millones-total-repartir-domingo/" target="_blank">!Loto súper acumulado, 12.000 millones de pesos a repartir! Pincha aquí</a>
+            </div>
+            <div class="announcement">
+                <a href="https://horoscoponegro.com/" target="_blank">¡Revisa tu horoscopo aquí</a>
+            </div>
+        </div>
+    </div>  
+    <main class="container mt-4">
+        <h1 class="text-center" id="Inicio">Periódico "El Faro"</h1
+
+            <div class="container mt-5">
+                <h2 class="text-center">Otros Artículos</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card small-article">
+                            <img class="card-img-top" src="img/eclipse.jpg" alt="Artículo 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Eclipse 2024</h5>
+                                <p class="card-text">La Nasa transmitió el Eclipse en tiempo real.</p>
+                                <a href="https://www.youtube.com/watch?v=-VglV73zVvU" class="btn btn-primary">Mira el video aquí</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card small-article">
+                            <img class="card-img-top" src="img/taiwan.png" alt="Artículo 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Terremoto en Taiwan</h5>
+                                <p class="card-text">Registros del Terremoto más potente en 25 años.</p>
+                                <a href="https://www.youtube.com/watch?v=bwrXI1lHZRs" class="btn btn-primary">Mira el video aquí</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card small-article">
+                            <img class="card-img-top" src="img/rayo.png" alt="Artículo 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Rayo cae sobre Cristo Redentor Rio de Janeiro</h5>
+                                <p class="card-text">Impactante registro del rayo que cayó.</p>
+                                <a href="https://www.youtube.com/shorts/me6QuWSNSpY?feature=share" class="btn btn-primary">Mira el video aquí</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        <section id="NoticiasRecientes" class="mt-5">
+            <h2 class="text-center">Noticias Recientes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/ratón.jpg" class="card-img-top" alt="Ratón de laboratorio">
+                        <div class="card-body">
+                            <h5 class="card-title">Científicos descubren que ratones de laboratorio les engañaban en las respuestas</h5>
+                            <p class="card-text">Un reciente estudio de la Universidad Johns Hopkins revela que los ratones de laboratorio pueden estar "engañando" en experimentos al dar respuestas incorrectas a pesar de conocer las correctas.</p>
+                            <a href="#raton123" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/LosBunkers.jpg" class="card-img-top" alt="Los Bunkers Concierto">
+                        <div class="card-body">
+                            <h5 class="card-title">Los Bunkers en el Estadio Nacional 2024</h5>
+                            <p class="card-text">Los Bunkers cerrarán su gira "Ven aquí" con dos conciertos históricos el 27 y 28 de abril en el Estadio Nacional, esperando la asistencia de más de un millón de espectadores.</p>
+                            <a href="#losbunkers123" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/gpt.jpg" class="card-img-top" alt="ChatGPT">
+                        <div class="card-body">
+                            <h5 class="card-title">ChatGPT: modelo ahora será más conversacional con GPT-4 Turbo</h5>
+                            <p class="card-text">OpenAI ha lanzado una actualización para ChatGPT, denominada GPT-4 Turbo, que ya está disponible para los suscriptores de pago. Esta versión mejorada del modelo ofrece respuestas más directas y utiliza un lenguaje más conversacional.</p>
+                            <a href="#gpt123" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <script src="script.js"></script>
-    <article class="fondo text">
-        <h1 class="Titulo" id="Inicio">Periódico El Faro</h1>
-        <img src="img/logo.png" width="250"/>
-        <nav>
-        <p><a href="#Noticias">Sección Noticias</a></p>
-        <p><a href="#Deportes">Sección Deportes</a></p>
-        <p><a href="#Negocios">Sección Negocios</a></p>
-        </nav>    
 
-    <!--Sección Noticias Generales-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
 
-    <section>
-        <table class="container">
-    <br><h2 id="Noticias">Noticias de la Semana</h2><p><a href="#Inicio">Volver al Inicio</a></p>
-        <article class="post">
-            <tr>
-                <th class="sub1" colspan="2"><h4>Encuentran con vida a padre e hijo pescadores que estaban desaparecidos hace una semana en Coronel</h4></th>            
-            </tr>
-            <tr>
-                <td class="gr11"><img src="img/barco.jpg" width="400"/></td>
-                <td class="gr12" rowspan="2">La búsqueda de una semana de Rodrigo Cruz, de 50 años, y su hijo, Diego Cruz, tuvo un desenlace feliz, ya que este domingo <strong>encontrados con vida luego de estar una semana desaparecidos.</strong> 
-                <br><br>Ambos pescadores salieron el domingo 24 desde la costa de Coronel, región del Biobío, en su lancha <strong>"Alexia Esperanza"</strong>, siendo la última vez que se supo de su paradero. 
-                <br><br>Eso hasta la mañana de este domingo, cuando otra embarcación pudo dar con ellos en el mar, <strong>aproximadamente 3 millas al oeste de Pichilemu, región de O'Higgins.</strong> <br><br>Preliminarmente, y según se puede observar en registros en redes sociales, ambos se encontrarían en buenas condiciones de salud, aunque <strong>los trasladó a un recinto asistencial para que reciban la atención correspondiente.</strong></td>
-            </tr>
-            <tr>
-                <td class="gr13"><video src="video/pescadores.mp4" controls height="400"></video></td>
-            </tr></article>
-
-        <article class="post">
-            <tr>
-                <th class="sub2" colspan="2"><h4>El despliegue de la DT por fecha límite de la primera etapa de las "40 horas"</h4></th>            
-            </tr>
-            <tr>
-                <td class="gr11"><img src="img/trabajo.jpg" width="400"/></td>
-                <td class="gr12" rowspan="2">El próximo 26 de abril se cumplirá el plazo para que todas las empresas hayan aplicado la <strong>primera etapa de gradualidad de la jornada laboral de 40 horas</strong>, en los márgenes que establece la ley promulgada en 2023 y que contempla un proceso gradual de cinco años. 
-                <br><br>Según se estableció, este primer año de implementación, las empresas deben ajustar su jornada de 45 a 44 horas semanales. Asimismo, la ley contempla un ajuste relevante en el <strong>artículo 22 del Código del Trabajo (inciso segundo)</strong>, que en términos generales, corresponde a aquellas que no cumplen horario y que deben estar a disposición de los requerimientos del empleador.
-                <br><br>La semana pasada, la <strong>ministra del Trabajo, Jeannette Jara</strong>, repasó los detalles de la normativa, donde subrayó que los cambios respecto al artículo 22 implican que "los contratos de trabajo ahora tienen que tener límites de jornadas casi para todos los trabajadores, salvo que sea el gerente, subgerente o que la Dirección del Trabajo (DT) lo califique así".</td>
-            </tr>
-            <tr>
-                <td class="gr13"><audio src="audio/art22.m4a" controls></audio>
-                <br>(Voz: Giorgio Boccardo)</td>
-            </tr></article>
-
-        <article class="post">
-            <tr>
-                <th class="sub3" colspan="2"><h4>Las claves para detectar y combatir al cáncer de colon: Nueve personas mueren al día por esta causa en Chile</h4></th>
-            </tr>
-            <tr>
-                <td class="gr11"><img src="img/colon.jpg" width="400"/></td>
-                <td class="gr12" rowspan="5">El intestino grueso es vital para el funcionamiento de nuestro organismo, pero muchos hábitos que tenemos lo afectan y es mejor cuidarlo a tiempo. Aquí un médico coloproctólogo entrega los síntomas a los que hay que estar atento y qué medidas adoptar para prevenirlo.
+<section id="Noticias" class="container mt-5">
+    <h2 class="text-center">Noticias de la Semana</h2>
+    <p class="text-center"><a href="#Inicio">Volver al Inicio</a></p>
+    <div class="row">
+<!-- Artículo sobre los pescadores -->
+<div class="col-lg-12 mb-4">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="img/barco.jpg" class="card-img" alt="Barco">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Encuentran con vida a padre e hijo pescadores que estaban desaparecidos hace una semana en Coronel</h5>
+            <p class="card-text">Encuentran con vida a padre e hijo pescadores que estaban desaparecidos hace una semana en Coronel</h5>
+                <p>La búsqueda de una semana de Rodrigo Cruz, de 50 años, y su hijo, Diego Cruz, tuvo un desenlace feliz, ya que este domingo <strong>encontrados con vida luego de estar una semana desaparecidos.</strong> 
+                    <br><br>Ambos pescadores salieron el domingo 24 desde la costa de Coronel, región del Biobío, en su lancha <strong>"Alexia Esperanza"</strong>, siendo la última vez que se supo de su paradero. 
+                    <br><br>Eso hasta la mañana de este domingo, cuando otra embarcación pudo dar con ellos en el mar, <strong>aproximadamente 3 millas al oeste de Pichilemu, región de O'Higgins.</strong> <br><br>Preliminarmente, y según se puede observar en registros en redes sociales, ambos se encontrarían en buenas condiciones de salud, aunque <strong>los trasladó a un recinto asistencial para que reciban la atención correspondiente.</strong></td>
+                </tr></p>
+            <video src="video/pescadores.mp4" controls class="img-fluid"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Artículo sobre las 40 horas -->
+  <div class="col-lg-12 mb-4">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="img/trabajo.jpg" class="card-img" alt="Trabajo">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">El despliegue de la DT por fecha límite de la primera etapa de las "40 horas"</h5>
+            <p class="card-text">El despliegue de la DT por fecha límite de la primera etapa de las "40 horas"</h5>
+                <p>El próximo 26 de abril se cumplirá el plazo para que todas las empresas hayan aplicado la <strong>primera etapa de gradualidad de la jornada laboral de 40 horas</strong>, en los márgenes que establece la ley promulgada en 2023 y que contempla un proceso gradual de cinco años. 
+                    <br><br>Según se estableció, este primer año de implementación, las empresas deben ajustar su jornada de 45 a 44 horas semanales. Asimismo, la ley contempla un ajuste relevante en el <strong>artículo 22 del Código del Trabajo (inciso segundo)</strong>, que en términos generales, corresponde a aquellas que no cumplen horario y que deben estar a disposición de los requerimientos del empleador.
+                    <br><br>La semana pasada, la <strong>ministra del Trabajo, Jeannette Jara</strong>, repasó los detalles de la normativa, donde subrayó que los cambios respecto al artículo 22 implican que "los contratos de trabajo ahora tienen que tener límites de jornadas casi para todos los trabajadores, salvo que sea el gerente, subgerente o que la Dirección del Trabajo (DT) lo califique así".</td>
+                </tr>
+                <tr></p>
+            <audio src="audio/art22.m4a" controls></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Artículo sobre cáncer de colon -->
+  <div class="col-lg-12 mb-4">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="img/colon.jpg" class="card-img" alt="Cáncer de Colon">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Las claves para detectar y combatir al cáncer de colon: Nueve personas mueren al día por esta causa en Chile</h5>
+            <p class="card-text">El intestino grueso es vital para el funcionamiento de nuestro organismo, pero muchos hábitos que tenemos lo afectan y es mejor cuidarlo a tiempo. Aquí un médico coloproctólogo entrega los síntomas a los que hay que estar atento y qué medidas adoptar para prevenirlo.
                 <br><br>El dr. Felipe Quezada, cirujano coloproctólogo del Centro de Cáncer de la Clínica U. Andes enlista los principales síntomas de esta enfermedad, "Al presentar algunas de estas situaciones, hay que preocuparse y asistir a la atención médica", dice.
                 <br><br>El llamado a prevenir se expande hacia abril, que se considera también el <strong>Mes de Concientización sobre el Cáncer de Colon.</strong> Vestirse de azul es una práctica común para conmemorarlo y animar a las personas a realizarse pruebas de detección temprana.</td>
-            </tr>
-            <!-- <tr>                
-                <td><img src="img/colon1.jpg" width="400"/></td>
-            </tr>
-            <tr>    
-                <td><img src="img/colon2.jpg" width="400"/></td>
-            </tr> -->
-            <tr>
-                <td class="gr13"><img src="img/colon3.jpg" width="400"/></td>
-            </tr>
-            <tr>
-                <td class="gr14"><img src="img/colon4.jpg" width="400"/></td>
-            </tr></article>
-        </table>
-    </section>        
+            </tr></p>
+            <img src="img/colon3.jpg" class="img-fluid mt-3" alt="Cáncer de Colon Detalle">
+            <img src="img/colon4.jpg" class="img-fluid mt-3" alt="Cáncer de Colon Detalle">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
 
-    <!--Sección Deportes-->
-    
-    <section>
-        <table class="container">    
-    <br><br><h2 id="Deportes">Deportes</h2><p><a href="#Inicio">Volver al Inicio</a></p>
-        <article class="post">
-            <tr>
-                <th class="sub1" colspan="2"><h4>"Un fichaje fantástico": Elogios para Ben Brereton por su doblete en la Premier</h4></th>            
-            </tr>
-            <tr>
-                <td class="gr11"><img src="img/ben.jpg" width="400"/></td>
-                <td class="gr12">El regreso de Ben Brereton de la selección chilena a Inglaterra fue con todo. Anotó un doblete y dio una asistencia en el empate 3-3 del Sheffield United ante el Fulham por la Premier League. 
-                <br><br><strong>"No tengo palabras, los muchachos estuvieron brillantes, dimos el 100% y nos mantuvimos firmes, aunque obviamente estamos decepcionados por el resultado"</strong>>, dijo el delantero de la "Roja" -su equipo estuvo 3-1 arriba-. 
-                <br><br>"Nuestros últimos partidos no han sido buenos, pero los fanáticos nos siguen apoyando. Me voy orgulloso de todos. Tenemos que seguir adelante", agregó. 
-                <br><br>La prensa inglesa destacó el doblete y la asistencia de Brereton.</td>                
-            </tr></article>
+<!-- Sección Deportes -->
+<section id="Deportes" class="container mt-5">
+    <h2 class="text-center">Deportes</h2>
+    <p class="text-center"><a href="#Inicio">Volver al Inicio</a></p>
+    <div class="row">
+        <!-- Noticia sobre Ben Brereton -->
+        <div class="col-lg-12 mb-4">
+            <div class="media">
+                <img src="img/ben.jpg" class="mr-3 img-fluid" alt="Ben Brereton" style="width: 200px;">
+                <div class="media-body">
+                    <h5>"Un fichaje fantástico": Elogios para Ben Brereton por su doblete en la Premier</h5>
+                    <p>El regreso de Ben Brereton de la selección chilena a Inglaterra fue con todo. Anotó un doblete y dio una asistencia en el empate 3-3 del Sheffield United ante el Fulham por la Premier League. 
+                        <br><br><strong>"No tengo palabras, los muchachos estuvieron brillantes, dimos el 100% y nos mantuvimos firmes, aunque obviamente estamos decepcionados por el resultado"</strong>>, dijo el delantero de la "Roja" -su equipo estuvo 3-1 arriba-. 
+                        <br><br>"Nuestros últimos partidos no han sido buenos, pero los fanáticos nos siguen apoyando. Me voy orgulloso de todos. Tenemos que seguir adelante", agregó. 
+                        <br><br>La prensa inglesa destacó el doblete y la asistencia de Brereton.</td>                
+                    </tr></article> <a href="#"></a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Noticia sobre Matías Soto -->
+        <div class="col-lg-12 mb-4">
+            <div class="media">
+                <img src="img/matias.jpg" class="mr-3 img-fluid" alt="Matías Soto" style="width: 200px;">
+                <div class="media-body">
+                    <h5>A qué hora el tenista Matías Soto irá hoy por su primer título profesional</h5>
+                    <p>El tenista chileno irá por el título del Challenger de San Luis de Potosí en México. Su rival será el colombiano Nicolás Mejía (444°).</strong> 
+                        <br><br>La final del torneo azteca está programada a las 18:30 horas de nuestro país. <br><br>Soto llegó a la definición del título tras vencer al francés Giovanni Mpetshi (165°) por parciales de 7-6 y 6-3 en las semifinales.
+                        <br><br>El tenista, de 24 años, supo sobreponerse al potente saque de su contendiente, quien se matriculó con 15 aces en la primera manga, pero el nacional tuvo la fortaleza para pelearle punto a punto al europeo hasta llegar al Tie-Break, el cual se llevó con un dramático 11-9.
+                        <br><br>En el segundo set, el chileno inclinó la balanza a su favor al quebrar el servicio del francés en el cuarto juego del segundo parcial, lo que le permitió llevarse la manga por 6-3 en una hora y 42 minutos de partido y sellar su clasificación a la final.
+                        <br><br>Lo de Soto esta semana es destacable. <strong>Ya subió más de 100 puestos y por ahora aparece 422° en el ranking live. Si gana el título podría quedar cerca del sitial 360° de la clasificación mundial.</strong></td>
+                    </tr></article> <a href="#"></a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Noticia sobre la tabla del Campeonato Nacional -->
+        <div class="col-lg-12 mb-4">
+            <div class="media">
+                <img src="img/tabla.jpg" class="mr-3 img-fluid" alt="Tabla Campeonato Nacional" style="width: 200px;">
+                <div class="media-body">
+                    <h5>Así está la tabla de posiciones del Campeonato Nacional 2024</h5>
+                    <p>Se sigue jugando la sexta fecha del Campeonato Nacional. Este sábado, <strong> Colo le ganó 4-1 a Everton.</strong> 
+                        <br><br>Con la victoria, <strong>el "Cacique" subió al cuarto lugar</strong> de la tabla de posiciones con 10 puntos, a seis del líder Iquique. 
+                        <br><br><strong>Everton, en cambio, está octavo.</strong> Los de Viña del Mar registran ocho unidades. <br><br>También este sábado, Huachipato y Universidad Católica empataron a cero en Talcahuano. 
+                        <br><br>Los "acereros" en estos momentos están en el noveno lugar con ocho puntos, <strong>mientras que la UC es decimosegunda con seis unidades.</strong> 
+                        <br><br>En el último duelo de hoy, Copiapó derrotó 2-0 a La Calera. Gracias a ese triunfo el cuadro nortino sumó sus primeros puntos en el certamen y dejó de ser el colista. <strong>Ahora es Cobresal el que está en el fondo.</strong></td>
+                    </tr></article> <a href="#"></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sección de Noticias Recientes -->
+<section class="mt-5">
+    <h2 class="text-center">Noticias Recientes</h2>
+    <div class="row">
+        <article class="col-lg-12"id="raton123">
+            <img src="img/ratón.jpg" class="img-fluid" alt="Ratón de laboratorio">
+            <h3>Científicos descubren que ratones de laboratorio les engañaban en las respuestas</h3>
+            <p>En un reciente estudio realizado por investigadores de la Universidad de Harvard, se descubrió que los ratones de laboratorio frecuentemente eligen dar respuestas incorrectas en los experimentos, a pesar de saber la respuesta correcta. Esta conducta sugiere que los ratones están evaluando estratégicamente el entorno y no simplemente siguiendo comandos de manera automática.</p>
+            <p>Los investigadores utilizaron una serie de pruebas de laberintos en las que los ratones podían obtener recompensas de comida al tomar decisiones correctas. Sorprendentemente, los ratones a menudo optaban por el camino incorrecto, incluso cuando habían aprendido previamente el patrón correcto. "Este comportamiento implica que los ratones están probando nuevas estrategias y que podrían estar midiendo el costo-beneficio de sus acciones de una manera que no habíamos anticipado", explicó el Dr. Simon Frey, el principal investigador del estudio.</p>
+            <p>Estos hallazgos podrían tener importantes implicaciones para la manera en que los científicos diseñan y interpretan los experimentos con modelos animales en el futuro. Además, desafían la noción tradicional de que los animales en experimentos están meramente respondiendo a estímulos sin un proceso de toma de decisiones complejo.</p>
+        </article>
+        
+        <article class="col-lg-12"id="losbunkers123">
+            <img src="img/LosBunkers.jpg" class="img-fluid" alt="Los Bunkers Concierto">
+            <h3>Los Bunkers en el Estadio Nacional 2024</h3>
+            <p>Los Bunkers cerrarán su gira "Ven aquí" con dos conciertos históricos el 27 y 28 de abril en el Estadio Nacional, esperando la asistencia de más de un millón de espectadores. <strong>Accesos según tipo de entrada:</strong>
+            <ul>
+                <li>Cancha: Acceso por calle Pedro de Valdivia.</li>
+                <li>Galería y Andes: Acceso por Avenida Grecia.</li>
+                <li>Pacífico y movilidad reducida: Acceso por Avenida Marathon.</li>
+            </ul>
+            <strong>Horarios de los shows:</strong>
+            <ul>
+                <li>18:45 hrs: Apertura con Pedropiedra.</li>
+                <li>19:30 hrs: Show de comedia con Fabrizio Copano.</li>
+                <li>19:45 hrs: DJ set de Marcelo Aldunate.</li>
+                <li>21:00 hrs: Actuación principal de Los Bunkers.</li>
+            </ul>
+            <strong>Transporte:</strong>
+            <p>El Metro de Santiago extenderá el servicio de la línea 6 hasta la 1:30 de la mañana, con Estadio Nacional como la única estación que permitirá la entrada de pasajeros.</p>
+            </p>
+        </article>
+         <!-- Noticia sobre GPT-4 Turbo -->
+         <div class="col-lg-12" id="gpt123">
+            <div class="card h-100">
+                <img src="img/chatgppppp3.jpg" class="card-img-top" alt="ChatGPT">
+                <div class="card-body">
+                    <h3 class="card-title">ChatGPT: modelo ahora será más conversacional con GPT-4 Turbo</h3>
+                    <p class="card-text">OpenAI ha lanzado una actualización para ChatGPT, denominada GPT-4 Turbo, que ya está disponible para los suscriptores de pago. Esta versión mejorada del modelo ofrece respuestas más directas y utiliza un lenguaje más conversacional. <strong>Características de GPT-4 Turbo:</strong></p>
+                    <ul>
+                        <li>Mayor capacidad y más económico que su versión anterior, GPT-4.</li>
+                        <li>Mejoras en habilidades como escritura, matemáticas, razonamiento lógico y codificación.</li>
+                    </ul>
+                    <p>Esta actualización, que ha sido anunciada a través del perfil de la compañía en X (anteriormente Twitter), busca proporcionar una experiencia de usuario más fluida y eficiente.</p>
+                    <p>OpenAI continúa invirtiendo en el desarrollo de sus modelos de inteligencia artificial, y GPT-4 Turbo ya está disponible para los usuarios de ChatGPT Plus, Team, Enterprise y API.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sección Negocios -->
+<section id="Negocios" class="container mt-5">
+    <h2 class="text-center">Negocios</h2>
+    <p class="text-center"><a href="#Inicio">Volver al Inicio</a></p>
+    <div class="row">
+        <!-- Noticia sobre "Yo Puedo Mujer Emprendedora 2024" -->
+        <div class="col-lg-12 mb-4">
+            <div class="media">
+                <img src="img/yopuedoM.png" class="mr-3 img-fluid" alt="Yo Puedo Mujer Emprendedora" style="width: 200px;">
+                <div class="media-body">
+                    <h5>“Yo Puedo Mujer Emprendedora 2024”: Convocatoria abierta para emprendimientos innovadores con liderazgos femeninos</h5>
+                    <p>EEl Centro de Emprendimiento Colbún (CEC) dio inicio al proceso de postulación de su concurso <strong>"Yo Puedo Mujer Emprendedora 2024"</strong>. Esta iniciativa diseñada para impulsar el desarrollo de emprendimientos liderados por mujeres en la Región del Biobío, cuenta con el financiamiento del Programa Viraliza de Corfo.
+                        <br><br>El certamen busca ofrecer formación teórico-práctica a emprendedoras en etapas de idea o desarrollo, con especial énfasis en la innovación y el potencial de crecimiento, así como en la integración de aspectos científico-tecnológicos en sus proyectos.
+                        <br><br><strong>“Sabemos que las mujeres emprendedoras son valientes, creativas y perseverantes. Sabemos que tienen el poder de generar cambios positivos en sus comunidades y en el país</strong>. Pero también sabemos que no es fácil emprender, que hay muchos obstáculos y desafíos que superar. Por eso queremos apoyarlas en el camino hacia el éxito”, explica Vanessa Verdugo, directora del Centro de Emprendimiento Colbún.</td>
+                    </tr></article> <a href="#"></a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Noticia sobre gremio agrícola -->
+        <div class="col-lg-12 mb-4">
+            <div class="media">
+                <img src="img/biginbio.png" class="mr-3 img-fluid" alt="BIGinBIO" style="width: 200px;">
+                <div class="media-body">
+                    <h5>Gremio agrícola se suma a alerta por aranceles al acero: "Podría lesionar nuestra relación con China"</h5>
+                    <p>La conocida aceleradora The Ganesha Lab acaba de anunciar que desde el <strong>11 de marzo estará disponible el proceso de postulación para su programa BIGinBIO 2024</strong>. Se trata de la novena generación de esta iniciativa de aceleración de alcance internacional.
+                        <br><br>El programa de escalamiento y aceleración está diseñado para impulsar la internacionalización de startups de alto potencial, brindando a los emprendedores las herramientas necesarias para navegar exitosamente en mercados globales altamente competitivos.
+                        <br><br>BIGinBIO busca seleccionar emprendimientos en etapa temprana de origen en latinoaméricano, que se enfoquen en soluciones basadas en ciencia y tecnología relacionadas con temas como el <strong>acceso a la salud, la escasez de alimentos, el envejecimiento de la población, el cambio climático y amenazas emergentes. Las áreas de interés incluyen bioagricultura, biomedicina, bioalimentación, salud, farmacéutica, diagnóstico y dispositivos médicos.</strong>
+                        <br><br>Los emprendedores interesados en participar de esta convocatoria deben completar el formulario de postulación en el <a href="https://theganeshalab.com/es/biginbioprogram/"> sitio web</a> de The Ganesha Lab antes del <strong>7 de abril.</strong></td>
+                    </tr></article> <a href="#"></a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Noticia sobre StartCo 2024 -->
+        <div class="col-lg-12 mb-4">
+            <div class="media">
+                <img src="img/startups.png" class="mr-3 img-fluid" alt="StartCo 2024" style="width: 200px;">
+                <div class="media-body">
+                    <h5>Más de 20 startups chilenas participarán en el evento colombiano StartCo 2024</h5>
+                    <p>El evento colombiano, <strong>StartCo</strong>, conocido por su capacidad para impulsar el crecimiento de startups, contará con la presencia de una amplia delegación chilena en su edición 2024. Con la participación de ProChile Colombia, Chile se suma por tercera vez consecutiva a este encuentro, donde se generan alianzas y crecimiento para el emprendimiento en la región. 
+                        <br><br>Con más de 350 startups esperadas en Bogotá los días <strong>14 y 15 de marzo</strong>, StartCo será el encuentro donde emprendedores, inversionistas y potenciales clientes se conectarán en busca de oportunidades. Chile tomará protagonismo con 25 empresas tecnológicas, <strong>22 de las cuales fueron convocadas por ProChile</strong>, con el objetivo de fortalecer lazos comerciales y potenciar la competitividad tanto de Colombia como de la región en su conjunto.
+                        <br><br>El evento que en 2023, atrajo a más de 13.000 asistentes de 25 países y un gran número de intenciones de inversión, promete superar sus propios récords este año. Con más de 80 sponsors del ecosistema de innovación y emprendimiento, StartCo 2024 se convierte en una plataforma para el intercambio de ideas y la búsqueda de sinergias entre empresas emergentes y grandes jugadores del mercado.
+                        <br><br>La reconocida calidad del ecosistema de innovación chileno no pasa desapercibida en Colombia. Las startups seleccionadas que viajarán al país cafetero tendrán la oportunidad de participar en espacios dedicados al levantamiento de capital, así como en negociaciones con destacados inversionistas, fondos de inversión y aceleradoras. <strong>Las 10 mejores incluso tendrán la posibilidad de presentar un pitch en vivo frente a 13 inversionistas de renombre</strong>, en un escenario que promete impulsar aún más el crecimiento de estas empresas.</td>
+                    </tr></article> <a href="#"></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="form-container">
+    <!-- Formulario para añadir artículos -->
+    <div class="form-wrap">
+        <h2>Agregar Artículo</h2>
+        <form id="articleForm">
+            <input type="text" id="articleTitle" placeholder="Título del artículo" required>
+            <textarea id="articleDescription" placeholder="Descripción del artículo" required></textarea>
+            <button type="button" onclick="addArticle()">Publicar Artículo</button>
+        </form>
+    </div>
 
-        <article class="post">
-            <tr>
-                <th class="sub2" colspan="2"><h4>A qué hora el tenista Matías Soto irá hoy por su primer título profesional</h4></th>            
-            </tr>
-            <tr>
-                <td class="gr11">><img src="img/matias.jpg" width="400"/></td>
-                <td class="gr12">Matías Soto (582°) sigue haciendo historia en su carrera. Este domingo dispurará su primera final en singles.
-                <br><br><strong>El tenista chileno irá por el título del Challenger de San Luis de Potosí en México. Su rival será el colombiano Nicolás Mejía (444°).</strong> 
-                <br><br>La final del torneo azteca está programada a las 18:30 horas de nuestro país. <br><br>Soto llegó a la definición del título tras vencer al francés Giovanni Mpetshi (165°) por parciales de 7-6 y 6-3 en las semifinales.
-                <br><br>El tenista, de 24 años, supo sobreponerse al potente saque de su contendiente, quien se matriculó con 15 aces en la primera manga, pero el nacional tuvo la fortaleza para pelearle punto a punto al europeo hasta llegar al Tie-Break, el cual se llevó con un dramático 11-9.
-                <br><br>En el segundo set, el chileno inclinó la balanza a su favor al quebrar el servicio del francés en el cuarto juego del segundo parcial, lo que le permitió llevarse la manga por 6-3 en una hora y 42 minutos de partido y sellar su clasificación a la final.
-                <br><br>Lo de Soto esta semana es destacable. <strong>Ya subió más de 100 puestos y por ahora aparece 422° en el ranking live. Si gana el título podría quedar cerca del sitial 360° de la clasificación mundial.</strong></td>
-            </tr></article>
+    <!-- Formulario de contacto -->
+    <div class="form-wrap">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" id="contactName" placeholder="Su nombre" required>
+            <textarea id="contactMessage" placeholder="Su mensaje" required></textarea>
+            <button type="button" onclick="sendMessage()">Enviar Mensaje</button>
+        </form>
+    </div>
+</div>
 
-        <article class="post">
-            <tr>
-                <th class="sub3" colspan="2"><h4>Así está la tabla de posiciones del Campeonato Nacional 2024</h4></th>            
-            </tr>
-            <tr>
-                <td class="gr11"><img src="img/tabla.jpg" width="400"/></td>
-                <td class="gr12">Se sigue jugando la sexta fecha del Campeonato Nacional. Este sábado, <strong> Colo le ganó 4-1 a Everton.</strong> 
-                <br><br>Con la victoria, <strong>el "Cacique" subió al cuarto lugar</strong> de la tabla de posiciones con 10 puntos, a seis del líder Iquique. 
-                <br><br><strong>Everton, en cambio, está octavo.</strong> Los de Viña del Mar registran ocho unidades. <br><br>También este sábado, Huachipato y Universidad Católica empataron a cero en Talcahuano. 
-                <br><br>Los "acereros" en estos momentos están en el noveno lugar con ocho puntos, <strong>mientras que la UC es decimosegunda con seis unidades.</strong> 
-                <br><br>En el último duelo de hoy, Copiapó derrotó 2-0 a La Calera. Gracias a ese triunfo el cuadro nortino sumó sus primeros puntos en el certamen y dejó de ser el colista. <strong>Ahora es Cobresal el que está en el fondo.</strong></td>
-            </tr></article>
-        </table>
-    </section>
+<div id="articles">
+    <h2>Artículos Publicados (<span id="articleCount">0</span>)</h2>
+</div>
+
+<script>
+let articles = [];
+
+function addArticle() {
+    const title = document.getElementById('articleTitle').value;
+    const description = document.getElementById('articleDescription').value;
+    if (title && description) {
+        articles.push({ title, description });
+        document.getElementById('articles').innerHTML += `<div><h3>${title}</h3><p>${description}</p></div>`;
+        document.getElementById('articleForm').reset();
+        updateArticleCount();
+    } else {
+        alert('Por favor, complete todos los campos.');
+    }
+}
+
+function updateArticleCount() {
+    document.getElementById('articleCount').textContent = articles.length;
+}
+
+function sendMessage() {
+    const name = document.getElementById('contactName').value;
+    const message = document.getElementById('contactMessage').value;
+    if (name && message) {
+        alert('Mensaje enviado. Gracias, ' + name + '!');
+        document.querySelector('form').reset();
+    } else {
+        alert('Por favor, complete todos los campos.');
+    }
+}
+
+window.onload = () => {
+    updateArticleCount();
+};
+</script>
+
+<footer>
+    <br><p><a href="#Inicio">Volver al Inicio</a></p>
+    <br><br>Contacto:
+    <br><a href="mailto:tamara.adasme@correoaiep.cl">Tamara Adasme</a>
+    <br><a href="mailto:cristian.acunaab@correoaiep.cl">Cristian Acuña</a>
+</footer>
+</article>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        function updateClock() {
+            const now = new Date(); // Obtiene la fecha y hora actual
+            const hours = ('0' + now.getHours()).slice(-2); // Formatea las horas para mostrar dos dígitos
+            const minutes = ('0' + now.getMinutes()).slice(-2); // Formatea los minutos para mostrar dos dígitos
+            const seconds = ('0' + now.getSeconds()).slice(-2); // Formatea los segundos para mostrar dos dígitos
+            const day = ('0' + now.getDate()).slice(-2); // Día
+            const month = ('0' + (now.getMonth() + 1)).slice(-2); // Mes
+            const year = now.getFullYear(); // Año
+        
+            // Formatopara la fecha y hora
+            const formattedTime = day + '/' + month + '/' + year + ' ' + hours + ':' + minutes + ':' + seconds;
+        
             
-    <!--Sección Negocios y emprendimientos-->
-
-    <section>
-        <table class="container">
-            <br><br><h2 id="Negocios">Negocios</h2><p><a href="#Inicio">Volver al Inicio</a></p>
-        <article class="post">
-            <tr>
-                <th class="sub1" colspan="2"><h4>“Yo Puedo Mujer Emprendedora 2024”: Convocatoria abierta para emprendimientos innovadores con liderazgos femeninos</h4></th>            
-            </tr>
-            <tr>
-                <td class="gr11"><img src="img/yopuedoM.png" width="400"/></td>
-                <td class="gr12">El Centro de Emprendimiento Colbún (CEC) dio inicio al proceso de postulación de su concurso <strong>"Yo Puedo Mujer Emprendedora 2024"</strong>. Esta iniciativa diseñada para impulsar el desarrollo de emprendimientos liderados por mujeres en la Región del Biobío, cuenta con el financiamiento del Programa Viraliza de Corfo.
-                <br><br>El certamen busca ofrecer formación teórico-práctica a emprendedoras en etapas de idea o desarrollo, con especial énfasis en la innovación y el potencial de crecimiento, así como en la integración de aspectos científico-tecnológicos en sus proyectos.
-                <br><br><strong>“Sabemos que las mujeres emprendedoras son valientes, creativas y perseverantes. Sabemos que tienen el poder de generar cambios positivos en sus comunidades y en el país</strong>. Pero también sabemos que no es fácil emprender, que hay muchos obstáculos y desafíos que superar. Por eso queremos apoyarlas en el camino hacia el éxito”, explica Vanessa Verdugo, directora del Centro de Emprendimiento Colbún.</td>
-            </tr></article>
-
-        <article class="post">
-            <tr>
-                <th class="sub2" colspan="2"><h4>Gremio agrícola se suma a alerta por aranceles al acero: "Podría lesionar nuestra relación con China"</h4></th>            
-            </tr>
-            <tr>
-                <td class="gr11"><img src="img/biginbio.png" width="400"/></td>
-                <td class="gr12">La conocida aceleradora The Ganesha Lab acaba de anunciar que desde el <strong>11 de marzo estará disponible el proceso de postulación para su programa BIGinBIO 2024</strong>. Se trata de la novena generación de esta iniciativa de aceleración de alcance internacional.
-                <br><br>El programa de escalamiento y aceleración está diseñado para impulsar la internacionalización de startups de alto potencial, brindando a los emprendedores las herramientas necesarias para navegar exitosamente en mercados globales altamente competitivos.
-                <br><br>BIGinBIO busca seleccionar emprendimientos en etapa temprana de origen en latinoaméricano, que se enfoquen en soluciones basadas en ciencia y tecnología relacionadas con temas como el <strong>acceso a la salud, la escasez de alimentos, el envejecimiento de la población, el cambio climático y amenazas emergentes. Las áreas de interés incluyen bioagricultura, biomedicina, bioalimentación, salud, farmacéutica, diagnóstico y dispositivos médicos.</strong>
-                <br><br>Los emprendedores interesados en participar de esta convocatoria deben completar el formulario de postulación en el <a href="https://theganeshalab.com/es/biginbioprogram/"> sitio web</a> de The Ganesha Lab antes del <strong>7 de abril.</strong></td>
-            </tr></article>
-
-        <article class="post">
-            <tr>
-                <th class="sub3" colspan="2"><h4>Más de 20 startups chilenas participarán en el evento colombiano StartCo 2024</h4></th>            
-            </tr>
-            <tr>
-                <td class="gr11"><img src="img/startups.png" width="400"/></td>
-                <td class="gr12">El evento colombiano, <strong>StartCo</strong>, conocido por su capacidad para impulsar el crecimiento de startups, contará con la presencia de una amplia delegación chilena en su edición 2024. Con la participación de ProChile Colombia, Chile se suma por tercera vez consecutiva a este encuentro, donde se generan alianzas y crecimiento para el emprendimiento en la región. 
-                <br><br>Con más de 350 startups esperadas en Bogotá los días <strong>14 y 15 de marzo</strong>, StartCo será el encuentro donde emprendedores, inversionistas y potenciales clientes se conectarán en busca de oportunidades. Chile tomará protagonismo con 25 empresas tecnológicas, <strong>22 de las cuales fueron convocadas por ProChile</strong>, con el objetivo de fortalecer lazos comerciales y potenciar la competitividad tanto de Colombia como de la región en su conjunto.
-                <br><br>El evento que en 2023, atrajo a más de 13.000 asistentes de 25 países y un gran número de intenciones de inversión, promete superar sus propios récords este año. Con más de 80 sponsors del ecosistema de innovación y emprendimiento, StartCo 2024 se convierte en una plataforma para el intercambio de ideas y la búsqueda de sinergias entre empresas emergentes y grandes jugadores del mercado.
-                <br><br>La reconocida calidad del ecosistema de innovación chileno no pasa desapercibida en Colombia. Las startups seleccionadas que viajarán al país cafetero tendrán la oportunidad de participar en espacios dedicados al levantamiento de capital, así como en negociaciones con destacados inversionistas, fondos de inversión y aceleradoras. <strong>Las 10 mejores incluso tendrán la posibilidad de presentar un pitch en vivo frente a 13 inversionistas de renombre</strong>, en un escenario que promete impulsar aún más el crecimiento de estas empresas.</td>
-            </tr></article>
-        </table>
-    </section>
-    
-    <!--Footer-->    
-    
-        <footer>
-            <br><p><a href="#Inicio">Volver al Inicio</a></p>
-            <br><br>Contacto:
-            <br><a href="mailto:tamara.adasme@correoaiep.cl">Tamara Adasme</a>
-            <br><a href="mailto:cristian.acunaab@correoaiep.cl">Cristian Acuña</a>
-        </footer>
-    </article>
+            document.getElementById('clock').textContent = formattedTime;
+        
+            // Llama a updateClock cada segundo
+            setTimeout(updateClock, 1000);
+        }
+        
+        // Inicia la función al cargar la página
+        window.onload = updateClock;
+        </script>        
 </body>
 </html>
